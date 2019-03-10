@@ -2,7 +2,7 @@
   <head>
     <title>Hello OKD</title>
   </head>
-  <body bgcolor="#ff0000">
+  <body bgcolor="#FFF333">
     <h1>
 <?php
 
