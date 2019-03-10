@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "registry.hml.fiesc.com.br/demoprj/jenkins-dockerfile"
+        registry = "registry.hml.fiesc.com.br/demoprj/jpipe"
         registryCredential = 'oc-registry'
         dockerImage = ''
     }
