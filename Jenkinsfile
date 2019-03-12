@@ -2,7 +2,7 @@ pipeline {
     environment {
         registry = "registry.hml.fiesc.com.br/apppipe/appj"
         dockerImage = ''
-        registryCredential = credentials('okd-hml-client')
+        registryCredential = credentials('system:serviceaccount:default:jenkins')
     }
     agent any
     stages {
