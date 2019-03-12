@@ -2,6 +2,8 @@ pipeline {
     environment {
         registry = "registry.hml.fiesc.com.br/apppipe/appj"
         dockerImage = ''
+        registryCredential = credentials('builder-dockercfg-cz5hr')
+            
     }
     agent any
     stages {
@@ -15,7 +17,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hml.fiesc.com.br') {
+                    docker.withRegistry('https://registry.hml.fiesc.com.br', registryCredential) {
                         dockerImage.push()
                     }
                 }
