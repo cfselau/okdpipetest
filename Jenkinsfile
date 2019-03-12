@@ -1,7 +1,6 @@
 pipeline {
     environment {
         registry = "registry.hml.fiesc.com.br/apppipe/appj"
-        registryCredential = 'oc-registry'
         dockerImage = ''
     }
     agent any
